@@ -1,0 +1,264 @@
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /*padding-top: 70px;*/
+ /* body padding for fixed top nav */
+}
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.tab-pane {
+  margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background-color: #e1e1e1;
+ /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.sidebar ul {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 100%;
+}
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Social Icons Styles */
+.list-social-icons {
+  margin-bottom: 45px;
+}
+
+.tooltip-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.facebook-link a:hover {
+  color: #3b5998;
+}
+
+.linkedin-link a:hover {
+  color: #007fb1;
+}
+
+.twitter-link a:hover {
+  color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+  color: #d14836;
+}
+
+/* Service Page Styles */
+.service-icon {
+  font-size: 50px;
+}
+
+/* 404 Page Styles */
+.error-404 {
+  font-size: 8em;
+}
+
+/* Pricing Page Styles */
+.price {
+  font-size: 4em;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+  margin: 50px 0;
+}
+
+
+/*-------------- customization --------------*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
+.navbar {
+  min-height: 70px;
+}
+.navbar-nav > li > a {
+  padding-top: 30px;
+  font-family: Times New Roman, SimSun, STSong, serif;
+}
+
+.carousel-caption {
+  left:15%;
+  right:auto;
+  padding-bottom:250px;
+  text-align:left;
+}
+
+.dropdown-menu{
+  background-color:#222;
+}
+.dropdown-menu > li > a {
+  color:#ccc;
+}
+.dropdown-menu > li > a:hover {
+  color:#fff;
+  background-color:#222;
+}
+
+h1{
+  font: 45px/35px "Minion Regular",Times,"Times New Roman",serif;
+  margin-bottom:20px;
+}
+h3{
+  margin-left: 5px;
+  font-family:"Minion Italic",Times,"Times New Roman",serif;
+}
+p{
+  margin-left:5px;
+}
+
+.navbar-inverse {
+  background-color: rgba(30,30,30,0.8);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+  .carousel {
+    height: 60%;
+ /* increases the carousel height so it looks good on phones */
+  }
+
+  .carousel-caption {
+    left:10%;
+    right:10%;
+    padding-bottom:150px;
+    text-align:left;
+  }
+
+  .container > .navbar-header{
+    height: 70px;
+  }
+}
+.gold_btn{
+  display: inline-block;
+  background: #c0944a;
+  background: -moz-linear-gradient(top,#f6c26a 0,#c0944a 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f6c26a),color-stop(100%,#c0944a));
+  background: -webkit-linear-gradient(top,#f6c26a 0,#c0944a 100%);
+  background: -o-linear-gradient(top,#f6c26a 0,#c0944a 100%);
+  background: -ms-linear-gradient(top,#f6c26a 0,#c0944a 100%);
+  background: linear-gradient(to bottom,#f6c26a 0,#c0944a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6c26a', endColorstr='#c0944a', GradientType=0);
+  color: #fff;
+  cursor: pointer;
+  font: 13px/18px "Futura Book",Helvetica,Arial,sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 20px;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 20px 0 0 25px;
+  letter-spacing: .05em;
+}
+
+.dropdown-menu{
+  border-top:1px solid #c0944a;
+  background-color: rgba(30,30,30,0.9);
+  text-align:center;
+  min-width:auto;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+  color: #b68868;
+}
+
+a{
+  color:#b68868;
+}
+a:hover, a:focus{
+  color:#ddac5a;
+}
+
+.btn-primary{
+color: #fff;
+background-color: #b68868;
+border-color: #a67858;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+color: #fff;
+background-color: #ddac5a;
+border-color: #cd9c4a;
+}
+
+#map {
+  width: 100%;
+    height: 500px;
+}
+
+.map_panel{
+  position: relative;
+float: right;
+width: 50%;
+height: 500px;
+margin-top: -500px;
+background: rgba(255,255,255,0.7);
+padding:20px;
+line-height:130%;
+}
+
+.map_panel ul li{
+line-height:150%;
+}
