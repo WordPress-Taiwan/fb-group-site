@@ -101,6 +101,7 @@ node_modules/
 
 # ignore db config
 wp-config.php
+sftp-config.json
 
 # ignor backup files
 _bak/
