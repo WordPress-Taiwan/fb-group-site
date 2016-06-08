@@ -7,7 +7,9 @@
 				<input class="search-input" type="search" name="s" placeholder="請輸入關鍵字...">
 				<button class="search-submit" type="submit" role="button">搜尋</button>
 			</form>
-			<div class="intro-tip tooltip"><span class="ps">- 資料來源 -</span></div>
+			<p class="v-textcenter">
+				<button class="intro-tip tooltip" data-balloon="本站內文來自 Wordpress Taiwan 正體中文 FB 社團" data-balloon-pos="down">- 資料來源 -</button>
+			</p>
 			<nav class="nav intro-nav">
 				<?php html5blank_nav(); ?>
 			</nav>
