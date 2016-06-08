@@ -47,9 +47,10 @@
 					<div class="wrap-search wrap-search-mobile">
 						<?php get_template_part('searchform'); ?>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</header>
-			<div class="wrap-mobile-nav">
+			<div class="wrap-mobile-nav h-mobileonly">
 				<div class="logo">
 					<a href="<?php echo home_url(); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">

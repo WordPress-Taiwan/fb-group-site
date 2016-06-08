@@ -1,6 +1,12 @@
 var $= jQuery.noConflict();
 $(document).ready(function(){
 	$('.post-content a').attr('target','_blank');
+	$('.nav-open').click(function(){
+		$('.wrap-mobile-nav').slideDown();
+	})
+	$('.nav-close').click(function(event) {
+		$('.wrap-mobile-nav').slideUp();
+	});
 })
 
 $(window).scroll(function(){

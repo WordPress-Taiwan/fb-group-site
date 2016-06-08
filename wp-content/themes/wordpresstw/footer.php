@@ -1,7 +1,7 @@
 		</div>
 		<?php wp_footer(); ?>
-		<script>
 		<?php if(is_home()): ?>
+			<script>
 			var count = 2;
 			$(window).scroll(function(){
                 if($(window).scrollTop() == $(document).height() - $(window).height()){
@@ -19,8 +19,7 @@
                     }
                 });
                 return false;
-            }
-		</script>
+            }</script>
 		<?php endif; ?>
 		<!-- google analytics -->
 		<script>

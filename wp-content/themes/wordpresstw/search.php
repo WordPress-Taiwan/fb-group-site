@@ -61,6 +61,10 @@
 						</article>
 					<?php endforeach; ?>
 				<?php endif; ?>
+
+				<?php if ( !have_posts() && !$comments  ) : ?>
+					<h3 class="head-title">無相關搜尋結果</h3>
+				<?php endif; ?>
 			</div>
 		</section>
 	</main>

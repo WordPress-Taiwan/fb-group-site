@@ -156,24 +156,36 @@ transition: all .2s ease; }
 	.intro-title { margin-bottom: 0; }
 	.wrap-intro .search-input { width: 100%; padding: .8rem 0; text-align: center; }
 	.wrap-intro .search-submit { width: 100%; margin-left: 0; margin-top: .5rem;
-	-webkit-border-radius: 3;
-	-moz-border-radius: 3;
-	-ms-border-radius: 3;
-	-o-border-radius: 3;
-	border-radius: 3; }
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px; }
+	.search .seach-input {
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	-ms-border-radius: 3px 0 0 3px;
+	-o-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px; }
 	.header { display: none; }
 	.header.h-mobileonly { display: block; }
+	.wrap-header { width: 100%; }
 	.intro-tip { margin: 2rem 0; }
 	.post-list,
 	.comment-list { width: 90%; }
 	.post-list { padding-top: 1rem; }
 	.nav-open { float: left; background: none; border: 0; }
 	.wrap-search-mobile { float: left; padding: 0; }
-	.wrap-search-mobile .search-input { width: 160px; float: left; }
-	.wrap-search-mobile .search-submit { margin-left: 0; }
-	.wrap-mobile-nav { x-display: none; position: fixed; width: 100%; height: 100vh; padding: 2rem 0; background: #F8F8F8; z-index: 999; }
-	.wrap-mobile-nav li { text-align: center; }
-	.wrap-mobile-nav a { display: block; width: 194px; margin: 0 auto; }
+	.wrap-search-mobile .search-input { float: left; width: auto; height: 38px; padding: 0px 30% 0px 10px; }
+	.wrap-search-mobile .search-submit { position: absolute; top: .8rem; right: .5rem; height: 40px; margin-left: 0; font-weight: normal; }
+	.wrap-mobile-nav { position: fixed; width: 100%; height: 100vh; top: 0; left: 0; padding: 2rem 0; background: #F8F8F8; z-index: 999; }
+	.wrap-mobile-nav .logo { display: block; width: 194px; margin: 0 auto; }
+	.wrap-mobile-nav li { display: block; padding: 1.5rem 0; text-align: center; }
+	.wrap-mobile-nav li a { font-size: 1rem; }
+	.wrap-mobile-nav .nav { padding-top: 0; }
+	.nav-close { position: absolute; top: .2rem; right: .2rem; display: block; width: 40px; height: 40px; border: 0; background: url('../img/img-nav-close.svg') 0 0; text-indent: -9999px;}
+	.wrap-single-post { padding-top: 4rem; }
+	.wp-embedded-content { width: 100%; }
 }
 
 /* == PLUGINGS == */
