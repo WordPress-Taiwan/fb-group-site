@@ -27,7 +27,7 @@ while ($the_query->have_posts()) : $the_query->the_post();
 			<li><a class="btn-blue" href="<?php comments_link(); ?>">查看 <?php echo $comment; ?> 則留言</a></li>
 			<?php endif; ?>
 		</ul>
-		<span class="post-author h-fr">由 XXX 發表<?php echo $author_link; ?></span>
+		<!-- <span class="post-author h-fr">由 XXX 發表<?php echo $author_link; ?></span> -->
 		<div class="clearfix"></div>
 	</div>
 </article>
