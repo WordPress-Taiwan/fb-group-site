@@ -279,7 +279,7 @@ class WeDevs_FB_Group_To_WP {
         $group_id     = $option['group_id'];
         $limit        = isset( $option['limit'] ) ? intval( $option['limit'] ) : 30;
 
-        $fb_url       = 'https://graph.facebook.com/' . $group_id . '/feed/?limit=' . $limit . '&fields=id&type=normal,message,created_time,link,picture,actions&access_token=' . $access_token;
+        $fb_url       = 'https://graph.facebook.com/' . $group_id . '/feed/?limit=' . $limit . '&fields=id,message,created_time,link,type,picture,actions&access_token=' . $access_token;
 
         // build the query URL for next page
         if ( $page_num > 1 ) {
@@ -346,7 +346,7 @@ class WeDevs_FB_Group_To_WP {
         $access_token = $option['app_id'] . '|' . $option['app_secret'];
         $group_id     = $option['group_id'];
         $limit        = isset( $option['limit'] ) ? intval( $option['limit'] ) : 30;
-        $url          = 'https://graph.facebook.com/' . $group_id . '/feed/?limit=' . $limit . '&fields=id&type=normal,message,created_time,link,picture,actions&access_token=' . $access_token;
+        $url          = 'https://graph.facebook.com/' . $group_id . '/feed/?limit=' . $limit . '&fields=id,message,created_time,link,type,picture,actions&access_token=' . $access_token;
 
         $json_posts   = $this->fetch_stream( $url );
 
@@ -654,16 +654,15 @@ class WeDevs_FB_Group_To_WP {
             $link        = get_post_meta( $post->ID, '_fb_link', true );
             $group_id    = get_post_meta( $post->ID, '_fb_group_id', true );
 
-            $author_link = sprintf( '<a href="https://facebook.com/profile.php?id=%d" target="_blank">'.$author_id.'</a>', $author_id, $author_name );
-            $custom_data .= '<div class="fb-group-meta wrap-info"><ul class="h-fl">';
+            $author_link = sprintf( '<a href="https://facebook.com/profile.php?id=%d" target="_blank">aa%s</a>', $author_id, $author_name );
+
+            $custom_data = '<div class="fb-group-meta wrap-info"><ul class="h-fl">';
             //$custom_data .= sprintf( __( 'Posted by %s', 'fbgr2wp' ), $author_link );
             //$custom_data .= '<span class="sep"> | </span>';
             $custom_data .= sprintf( '<li><a class="btn-link" href="%s" target="_blank">原始連結</a></li>', $link, __( '原始連結', 'fbgr2wp' ) );
             //$custom_data .= '<span class="sep"> | </span>';
-            $custom_data .= sprintf( '<li><a class="btn-fb-share" href="https://www.facebook.com/dialog/share?app_id=574768409366719&display=popup&caption=Wordpress正體中文社團&href=http://wpg.tw&picture=http://smallsite.org/wp/wp-content/themes/wordpresstw/img/img-og.png" target="_blank">FB分享</a></li>', $group_id, __( 'FB分享', 'fbgr2wp' ) );
+            $custom_data .= sprintf( '<li><a class="btn-fb-share" href="https://www.facebook.com/dialog/share?app_id=574768409366719&display=popup&caption=Wordpress正體中文社團&href=http://smallsite.org/wp&picture=http://smallsite.org/wp/wp-content/themes/wordpresstw/img/img-og.png" target="_blank">FB分享</a></li>', $group_id, __( 'FB分享', 'fbgr2wp' ) );
             $custom_data .= '<div class="clearfix"></div></ul></div>';
-
-            //$custom_data .= '<span class="post-author h-fr">由'. $author_link .'發表</span>';
 
             $custom_data = apply_filters( 'fbgr2wp_content', $custom_data, $post, $author_id, $author_name, $link, $group_id );
 
