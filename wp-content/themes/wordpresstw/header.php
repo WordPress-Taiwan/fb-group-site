@@ -5,7 +5,7 @@
 		<!-- 標題為頁面標題加網站標題 -->
 		<title itemprop="name"><?php if(!is_home()){ echo the_title().' | '.get_bloginfo('title'); } else { echo get_bloginfo('title'); }?></title>
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.png" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'  />
@@ -19,7 +19,7 @@
 		<meta property="og:url" content="<?php echo get_permalink();?>">
 		<meta property="og:site_name" content="<?php echo home_url(); ?>">
 		<meta property="og:description" content="<?php echo get_bloginfo('description'); ?>">
-		<meta property="og:image" content="<?php ?>">
+		<meta property="og:image" content="<?php  ?>">
 		<?php wp_head(); ?>
 		<?php wp_deregister_script('jquery'); ?>
 	</head>
